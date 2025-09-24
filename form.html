@@ -1,0 +1,45 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Music Generator</title>
+</head>
+<body>
+    <h1>Crie a playlist do seu personagem</h1>
+    <form method="POST" action="processa.php">
+        <label>Raça:</label>
+            <select name="race">
+            <option value="Elfo">Elfo</option>
+            <option value="Humano">Humano</option>
+            <option value="Goblin">Goblin</option>
+        </select>
+    <br><br>
+
+        <label>Classe:</label>
+            <select name="class">
+            <option value="Barbaro">Bárbaro</option>
+            <option value="Mago">Mago</option>
+            <option value="Arqueiro">Arqueiro</option>
+        </select>
+    <br><br>
+
+        <label>Alinhamento:</label>
+            <select name="alignment">
+            <option value="Bom">Bom</option>
+            <option value="Neutro">Neutro</option>
+            <option value="Evil">Mau</option>
+        </select>
+    <br><br>
+
+        <button type="submit">Gerar Playlist</button>
+    </form>
+
+
+
+</body>
+</html>
