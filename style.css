@@ -1,5 +1,5 @@
  body {
-        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-family: 'Press Start 2P', cursive;
         background: #3e2c23;
         color: #2c1b15;
         display: flex;
@@ -8,6 +8,7 @@
         height: 100vh;
         margin: 0;
     }
+
 
     .containerMenu {
         background: #f5e0c3;
@@ -30,9 +31,12 @@
         height: auto;
         text-align: center;
         border: 3px solid #7a4c2c;
-        max-height: 400px;
+        max-height: auto;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 
+    }
+    li{
+        margin-bottom: 10px;
     }
     select{
         width: 100%;

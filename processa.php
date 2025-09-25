@@ -26,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <title>Result</title>
     </head>
     <body>
@@ -39,22 +40,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h2>Músicas Sugeridas:</h2>
                 <ul>
                     <?php if (isset($musics[$race])): ?>
-                        <?php foreach ($musics[$race] as $musicdrop): ?>
-                            <li><?= $musicdrop ?></li>
-                        <?php endforeach; ?>
+                        <?php $key = array_rand($musics[$race]); ?>
+                            <li><?= $musics[$race][$key] ?></li>
                     <?php endif; ?>
                     <?php if (isset($musics[$class])): ?>
-                        <?php foreach ($musics[$class] as $musicdrop): ?>
-                            <li><?= $musicdrop ?></li>
-                        <?php endforeach; ?>
+                        <?php $key = array_rand($musics[$class]); ?>
+                            <li><?= $musics[$class][$key] ?></li>
                     <?php endif; ?>
                     <?php if (isset($musics[$alignment])): ?>
-                        <?php foreach ($musics[$alignment] as $musicdrop): ?>
-                            <li><?= $musicdrop ?></li>
-                        <?php endforeach; ?>
+                        <?php $key = array_rand($musics[$alignment]); ?>
+                            <li><?= $musics[$alignment][$key] ?></li>
                     <?php endif; ?>
+                    
                 </ul>
-
         </div>
     </body>
     </html>
