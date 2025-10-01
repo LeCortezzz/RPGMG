@@ -5,19 +5,50 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $alignment = $_POST["alignment"];
 
 
-    $musics = [
-        "Elfo"=> ["Elfo Musica 1","Elfo Musica 2", "Elfo Musica 3"],
-        "Humano"=> ["Humano Musica 1","Humano Musica 2", "Humano Musica 3"],
-        "Goblin"=> ["Goblin Musica 1","Goblin Musica 2", "Goblin Musica 3"],
-        
-        "Barbaro"=> ["Barbaro Musica 1","Barbaro Musica 2","Barbaro Musica 3"],
-        "Mago"=> ["Mago Musica 1","Mago Musica 2","Mago Musica 3"],
-        "Arqueiro"=> ["Arqueiro Musica 1","Arqueiro Musica 2","Arqueiro Musica 3"],
-        
-        "Bom"=> ["Bom Musica 1","Bom Musica 2","Bom Musica 3"],
-        "Neutro"=> ["Neutro Musica 1","Neutro Musica 2","Neutro Musica 3"],
-        "Mau"=> ["Mau Musica 1","Mau Musica 2","Mau Musica 3"],
+    $raceGenres =[
+        "Elfo" = ["celtic","new-age","harp"]
+        "Humano" = ["soft-rock","progressive-rock","gregorian"]
+        "Goblin" = ["punk-rock","folk-punk","goblin-core"]
     ];
+    $classGenres =[
+        "Bárbaro" = ["metal","power-metal","doom"]
+        "Mago" = ["david-bowie","alternative","indie-rock"]
+        "Arqueiro" = ["ambient","rhythmic","celtic"]
+    ];
+    $alignmentGenres =[
+        "Bom" = ["hope","fast-paced","happy"]
+        "Neutral" = ["calm","passive","neutral"]
+        "Evil" = ["dark","evil","obscure"]
+    ];
+    $genresVideos = [
+        "celtic" = ["link1","link2","link3"]
+        "new-age" = ["link1","link2","link3"]
+        "harp" = ["link1","link2","link3"]
+        "soft-rock" = ["link1","link2","link3"]
+        "progressive-rock" = ["link1","link2","link3"]
+        "gregorian" = ["link1","link2","link3"]
+        "punk-rock" = ["link1","link2","link3"]
+        "folk-punk" = ["link1","link2","link3"]
+        "goblin-core" = ["link1","link2","link3"]
+        "metal" = ["link1","link2","link3"]
+        "power-metal" = ["link1","link2","link3"]
+        "doom" = ["link1","link2","link3"]
+        "david-bowie" = ["link1","link2","link3"]
+        "alternative" = ["link1","link2","link3"]
+        "indie-rock" = ["link1","link2","link3"]
+        "ambient" = ["link1","link2","link3"]
+        "rhythmic" = ["link1","link2","link3"]
+        "hope" = ["link1","link2","link3"]
+        "fast-paced" = ["link1","link2","link3"]
+        "happy" = ["link1","link2","link3"]
+        "calm" = ["link1","link2","link3"]
+        "passive" = ["link1","link2","link3"]
+        "neutral" = ["link1","link2","link3"]
+        "dark" = ["link1","link2","link3"]
+        "evil" = ["link1","link2","link3"]
+        "obscure" = ["link1","link2","link3"]
+    ]
+
 } 
 ?>
     <!DOCTYPE html>
@@ -30,6 +61,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <title>Result</title>
     </head>
     <body>
+
+
         <div class="containerIndex">
             <h1>Você escolheu:</h1>
                 <ul>
