@@ -26,14 +26,13 @@
         background: #f5e0c3;
         padding: 30px;
         border-radius: 15px;
-        max-width: 300px;
+        max-width: 900px;
         width: 100%;
         height: auto;
         text-align: center;
         border: 3px solid #7a4c2c;
-        max-height: auto;
+        max-height: 750px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-
     }
     li{
         margin-bottom: 10px;
@@ -68,3 +67,4 @@
         display: block;
         font-weight: bold;
     }
+    
